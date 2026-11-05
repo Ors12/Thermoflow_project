@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ThermoFlow</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<style>
+.stat-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    animation: floatIcon 2s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="index.html">ThermoFlow</a>
+<div class="ms-auto">
+<a href="#services" class="btn btn-outline-light me-2">Szolgáltatások</a>
+<a href="#references" class="btn btn-outline-light me-2">Referenciák</a>
+<a href="#booking" class="btn btn-outline-light me-2">Időpontfoglalás</a>
+<a href="contact.html" class="btn btn-warning">Kapcsolat</a>
+</div>
+</div>
+</nav>
+
+<header class="hero text-center text-white">
+<div class="container">
+<h1 class="display-5 fw-bold">Épületgépészet Szeged</h1>
+<p>Víz · Gáz · Fűtés</p>
+</div>
+</header>
+<!-- MARKETING STRIP -->
+<section class="py-4 bg-warning text-dark">
+<div class="container text-center">
+<div class="row g-3">
+<div class="col-md-3 fw-bold">⚡ Gyors kiszállás</div>
+<div class="col-md-3 fw-bold">⭐ 5★ ügyfélértékelések</div>
+<div class="col-md-3 fw-bold">🛠 10+ év tapasztalat</div>
+<div class="col-md-3 fw-bold">💰 Kedvező árak</div>
+</div>
+</div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="py-5 text-center">
+<div class="container">
+<h2 class="fw-bold mb-3">Probléma van a fűtéssel vagy vízzel?</h2>
+<p class="lead">Hívjon most és rövid időn belül megoldjuk!</p>
+<a href="contact.html" class="btn btn-warning btn-lg">Ajánlatot kérek</a>
+</div>
+</section>
+
+<!-- STATS -->
+
+
+<section class="py-5 bg-light">
+<div class="container text-center">
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="stat-icon">🛠</div>
+<h3 class="fw-bold counter" data-target="500">0</h3>
+<p>Elvégzett munka</p>
+</div>
+
+<div class="col-md-3">
+<div class="stat-icon">🏆</div>
+<h3 class="fw-bold counter" data-target="10">0</h3>
+<p>Év tapasztalat</p>
+</div>
+
+<div class="col-md-3">
+<div class="stat-icon">⭐</div>
+<h3 class="fw-bold counter" data-target="100">0</h3>
+<p>Elégedett ügyfél</p>
+</div>
+
+<div class="col-md-3">
+<div class="stat-icon">⚡</div>
+<h3 class="fw-bold counter" data-target="24">0</h3>
+<p>Gyors reagálás (h)</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- TESTIMONIALS -->
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold text-center mb-5">Ügyfél vélemények</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card shadow p-4">
+★★★★★
+<p>Nagyon gyors és profi munka, csak ajánlani tudom!</p>
+<strong>— Kovács Péter</strong>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card shadow p-4">
+★★★★★
+<p>Korrekt ár és pontos érkezés. Ritka manapság!</p>
+<strong>— Nagy Anna</strong>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card shadow p-4">
+★★★★★
+<p>Fűtés probléma aznap megoldva. Köszönöm!</p>
+<strong>— Szabó László</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section id="services" class="py-5">
+<div class="container text-center">
+<h2 class="fw-bold mb-5">Szolgáltatások</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card service-card shadow p-4 h-100" data-bs-toggle="modal" data-bs-target="#service1">
+<div class="display-4 mb-3">🔧</div>
+<h5 class="fw-bold">Vízszerelés</h5>
+<p>Kattintson a részletekért</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card service-card shadow p-4 h-100" data-bs-toggle="modal" data-bs-target="#service2">
+<div class="display-4 mb-3">🔥</div>
+<h5 class="fw-bold">Gázszerelés</h5>
+<p>Kattintson a részletekért</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card service-card shadow p-4 h-100" data-bs-toggle="modal" data-bs-target="#service3">
+<div class="display-4 mb-3">♨️</div>
+<h5 class="fw-bold">Fűtéstechnika</h5>
+<p>Kattintson a részletekért</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICE MODALS -->
+
+<div class="modal fade" id="service1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content p-4">
+<h3 class="fw-bold mb-3">🔧 Vízszerelés</h3>
+<ul class="list-unstyled">
+<li>✔ Csőtörés javítás</li>
+<li>✔ Vízvezeték kiépítés</li>
+<li>✔ Szaniterek bekötése</li>
+<li>✔ Duguláselhárítás</li>
+</ul>
+<p>Gyors és megbízható vízszerelési szolgáltatás lakossági és ipari ügyfeleknek.</p>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="service2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content p-4">
+<h3 class="fw-bold mb-3">🔥 Gázszerelés</h3>
+<ul class="list-unstyled">
+<li>✔ Gázkészülék telepítés</li>
+<li>✔ Karbantartás</li>
+<li>✔ Hálózat kiépítés</li>
+<li>✔ Biztonsági ellenőrzés</li>
+</ul>
+<p>Engedéllyel végzett professzionális gázszerelési munkák.</p>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="service3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content p-4">
+<h3 class="fw-bold mb-3">♨️ Fűtéstechnika</h3>
+<ul class="list-unstyled">
+<li>✔ Kazáncsere</li>
+<li>✔ Radiátor telepítés</li>
+<li>✔ Padlófűtés rendszerek</li>
+<li>✔ Korszerűsítés</li>
+</ul>
+<p>Energiahatékony fűtési megoldások modern technológiával.</p>
+</div>
+</div>
+</div>
+
+
+<section id="references" class="bg-light py-5">
+<div class="container text-center">
+<h2 class="fw-bold mb-5">Referenciák</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<a href="https://images.unsplash.com/photo-1581092160562-40aa08e78837" data-lightbox="refs">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837" class="img-fluid rounded shadow ref-img">
+</a>
+</div>
+<div class="col-md-4">
+<a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" data-lightbox="refs">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="img-fluid rounded shadow ref-img">
+</a>
+</div>
+<div class="col-md-4">
+<a href="https://images.unsplash.com/photo-1621905251918-48416bd8575a" data-lightbox="refs">
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a" class="img-fluid rounded shadow ref-img">
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="booking" class="py-5">
+<div class="container">
+<h2 class="fw-bold text-center mb-4">Időpontfoglalás</h2>
+
+<div class="row g-5">
+<div class="col-lg-7">
+<div id="calendar"></div>
+</div>
+
+<div class="col-lg-5">
+<div class="booking-card shadow p-4 rounded">
+
+<form action="booking_mail.php" method="post">
+
+<div class="mb-3">
+<label>Dátum</label>
+<input type="text" id="selectedDate" name="date" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Időpont</label>
+<select id="timeSelect" name="time" class="form-select" required>
+<option value="">Válasszon időpontot</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>Szolgáltatás</label>
+<select name="service" class="form-select">
+<option>Vízszerelés</option>
+<option>Gázszerelés</option>
+<option>Fűtéstechnika</option>
+<option>Állapotfelmérés</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>E-mail</label>
+<input type="email" name="email" class="form-control" required>
+</div>
+
+<button class="btn btn-warning w-100">Foglalás küldése</button>
+
+</form>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+© 2026 ThermoFlow — 06302546548
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script src="js/booking.js"></script>
+
+
+<a href="tel:+36302546548" style="position:fixed;bottom:20px;right:20px;background:#ffc107;color:#000;
+padding:15px 18px;border-radius:50px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,0.3);z-index:999;">
+📞 Hívás
+</a>
+
+
+
+
+
+<script>
+function animateCounter(el, target, suffix=""){
+    let count = 0;
+    const duration = 2000; // 2 seconds (slower)
+    const steps = 60;
+    const increment = target / steps;
+    const stepTime = duration / steps;
+
+    function update(){
+        count += increment;
+        if(count >= target){
+            el.textContent = target + suffix;
+        } else {
+            el.textContent = Math.floor(count) + suffix;
+            setTimeout(update, stepTime);
+        }
+    }
+    update();
+}
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(c => {
+                if(!c.dataset.done){
+                    const target = parseInt(c.dataset.target);
+                    let suffix = "";
+                    if(target === 500) suffix = "+";
+                    if(target === 10) suffix = "+";
+                    if(target === 100) suffix = "%";
+                    if(target === 24) suffix = "h";
+                    animateCounter(c, target, suffix);
+                    c.dataset.done = "true";
+                }
+            });
+        }
+    });
+}, {threshold:0.5});
+
+const statsSection = document.querySelector('.counter')?.closest('section');
+if(statsSection) observer.observe(statsSection);
+</script>
+
+</body>
+</html>
